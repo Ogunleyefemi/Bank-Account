@@ -1,9 +1,7 @@
 header{
     display: flex;
-    padding: 10px;
-    margin: 5px;
     text-align: center;
-    background-color: blue;
+    background-color:rgb(129, 220, 64);
     position: fixed;
     top: 0;
     right: 0;
@@ -12,17 +10,32 @@ header{
 }
 .brand{
     display: flex;
+    padding: 10px;
+    margin: 5px;
     font-size: xx-large;
-    color: rgb(246, 237, 237);
+    color: white;
 }
 nav a{
-    margin-left: 120px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 100px;
     text-decoration: none;
     color: white ;
     margin-top: 10px;
     display: inline-flex;
     font-size: medium;
     font-weight: 700;
+}
+.menu{
+    margin-top: 20px;
+    display: inline-flex;
+    margin-left: 300px;
+    font-size: large;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+
 }
 nav :hover{
     color: black;
@@ -32,5 +45,20 @@ nav :hover{
     border: 1;
     border-color: white;
     color: white;
-    background-color: blue;
+    background-color: rgb(129, 220, 64);
 }
+section{
+    display: flex;
+    padding-top: 150px;
+}
+section img{
+    height: 550px;
+}
+section .welcome{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+
