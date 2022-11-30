@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+.brand{
+    display: flex;
+    font-size: xx-large;
+    color: rgb(246, 237, 237);
+}
+nav a{
+    margin-left: 130px;
+    text-decoration: none;
+    color: white ;
+    margin-top: 10px;
+    display: inline-flex;
+}
+nav :hover{
+    color: black;
+}
