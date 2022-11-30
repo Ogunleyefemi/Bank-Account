@@ -16,12 +16,21 @@ header{
     color: rgb(246, 237, 237);
 }
 nav a{
-    margin-left: 130px;
+    margin-left: 120px;
     text-decoration: none;
     color: white ;
     margin-top: 10px;
     display: inline-flex;
+    font-size: medium;
+    font-weight: 700;
 }
 nav :hover{
     color: black;
+}
+#btn{
+    border-radius: 15px;
+    border: 1;
+    border-color: white;
+    color: white;
+    background-color: blue;
 }
