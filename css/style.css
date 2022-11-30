@@ -52,13 +52,44 @@ section{
     padding-top: 150px;
 }
 section img{
-    height: 550px;
+    height: 600px;
+    padding-bottom: 100px;
 }
 section .welcome{
     text-align: center;
     padding: 10px;
     margin: 10px;
     color: black;
+}
+footer{
+    display: flex;
+    text-align: center;
+    background-color:rgb(129, 220, 64);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+footer .content :hover{
+    color: black;
+}
+.content{
+    display: flex;
+    text-align: center;
+    padding-left: 400px;
+    /* margin-left: 200px;
+    padding-top: 40px; */
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 10px;
+    display: flex;
 }
 
 
