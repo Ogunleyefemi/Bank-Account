@@ -52,7 +52,7 @@ section{
     padding-top: 150px;
 }
 section img{
-    height: 600px;
+    height: 650px;
     padding-bottom: 100px;
 }
 section .welcome{
@@ -60,6 +60,12 @@ section .welcome{
     padding: 10px;
     margin: 10px;
     color: black;
+}
+#joinUs{
+    background-color: rgb(129, 220, 64);
+    padding: 10px;
+    color: white;
+    border-radius: 2px;
 }
 footer{
     display: flex;
