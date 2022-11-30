@@ -29,6 +29,40 @@
                  <i class="fa-sharp fa-solid fa-bars"></i>
              </div>
          </header>
+         
+         <!-- section -->
+         <div class="fillForm">
+            <h6 style="font-weight: 700;">kindly complete the form below to create a WYRE account and also an initial deposit...</h6><br>
+            <form action="" id="register" class="form-control">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="">Surname:</label>
+                        <input type="text"  id="firstname" class="form-control" size="70" pattern="[A-Z]" required><br>
+                        <label for="">Firstname:</label>
+                        <input type="text"  id="lastname" class="form-control" size="70" pattern="[A-Z]" required><br>
+                        <label for="">Phone Number:</label>
+                        <input type="number"  id="phoneNumber" class="form-control" size="70" minlength="11" required><br>
+                        <label for="">ID Card:</label>
+                        <input type="file" class="form-control" size="70"><br>
+                    </div>
+                    <div class="col-6">
+                        <label for="">Email:</label>
+                        <input type="email"  id="email" class="form-control" size="70" required ><br>
+                        <label for="">D.O.B:</label>
+                        <input type="date"  id="dob" class="form-control" size="70" required><br>
+                        <label for="">Password:</label>
+                        <input type="password"  id="password" class="form-control" size="70" required><br>
+                        <label for="">Initail Deposit:</label>
+                        <input type="number" id="deposit" class="form-control" size="70" required>
+                    </div>
+                </div>
+                <div class="submitBtn">
+                    <input type="submit" value="CREATE ACCOUNT" id="submit">
+                </div>
+            </form>
+                   
+            
+         </div>
     </div>
     
 </body>

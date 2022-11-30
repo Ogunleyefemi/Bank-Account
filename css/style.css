@@ -97,5 +97,19 @@ footer .content :hover{
     margin-top: 10px;
     display: flex;
 }
-
+section #register{
+    text-align: center;
+}
+.fillForm{
+    text-align: center;
+    padding-top: 100px;
+}
+#submit{
+    background-color:rgb(129, 220, 64) ;
+    border: 0;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 700;
+}
 
