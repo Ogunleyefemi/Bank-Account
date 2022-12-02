@@ -115,4 +115,8 @@ section #register{
 #show{
     display: none;
 }
+.dashboard{
+    padding: 100px;
+    align-items: center;
+}
 
