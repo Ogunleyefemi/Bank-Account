@@ -18,21 +18,48 @@ Account.prototype.findContact = function(id) {
     return false;
   };
   Account.prototype.deleteContact = function(id) {
-    if (this.detailss[id] === undefined) {
+    if (this.details[id] === undefined) {
       return false;
     }
     delete this.details[id];
     return true;
   };
   // constructor for details
-function Users(firstName, lastName, phoneNumber) {
+function Users(surName, firstName, phoneNumber,balance) {
+    this.surName = surName;
     this.firstName = firstName;
-    this.lastName = lastName;
     this.phoneNumber = phoneNumber;
+    this.balance = 0.00;
+};
+Users.prototype.fullName = function(){
+    return this.surName + " " + this.firstName;
 };
 Users.prototype.accountNumber = function(){
     let final = '300100' + this.phoneNumber - 90000999
     return  final;
+};
+Users.prototype.deposit = function(amount){
+    this.balance += amount;
+ }
+ Users.prototype.withdraw = function(amount){
+    if(this.balance - amount < 0){
+      return 'Insufficient funds'
+    }else{
+      this.balance -= money
+    }
+  }
+// UI logic
+let account = new Account();
+// function to display fullname
+function displayFullname(customers){
+    let showFullname = $("#accountName");
+    let htmlForContactInfo = "";
+    Object.keys(customers.Users).forEach(function(key) {
+      const customers = customers.fullName(key);
+      htmlForContactInfo +=  customers.surName + " " + customers.firstName;
+    });
+    showFullname.html(htmlForContactInfo);
+
 }
 
 
