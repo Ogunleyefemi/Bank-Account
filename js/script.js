@@ -24,6 +24,16 @@ Account.prototype.findContact = function(id) {
     delete this.details[id];
     return true;
   };
+  // constructor for details
+function Users(firstName, lastName, phoneNumber) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.phoneNumber = phoneNumber;
+};
+Users.prototype.accountNumber = function(){
+    let final = '300100' + this.phoneNumber - 90000999
+    return  final;
+}
 
 
 
