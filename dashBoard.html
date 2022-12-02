@@ -31,15 +31,15 @@
          </header>
          
          <!-- section -->
-         <div class="fillForm">
+        <div id="fillForm">
             <h6 style="font-weight: 700;">kindly complete the form below to create a WYRE account and also an initial deposit...</h6><br>
             <form action="" id="register" class="form-control">
                 <div class="row">
                     <div class="col-6">
                         <label for="">Surname:</label>
-                        <input type="text"  id="firstname" class="form-control" size="70" pattern="[A-Z]" required><br>
+                        <input type="text"  id="firstname" class="form-control" size="70"  required><br>
                         <label for="">Firstname:</label>
-                        <input type="text"  id="lastname" class="form-control" size="70" pattern="[A-Z]" required><br>
+                        <input type="text"  id="lastname" class="form-control" size="70" required><br>
                         <label for="">Phone Number:</label>
                         <input type="number"  id="phoneNumber" class="form-control" size="70" minlength="11" required><br>
                         <label for="">ID Card:</label>
@@ -57,12 +57,30 @@
                     </div>
                 </div>
                 <div class="submitBtn">
-                    <input type="submit" value="CREATE ACCOUNT" id="submit">
+                    <button id="submit">CREATE ACCOUNT</button>
                 </div>
             </form>
                    
             
-         </div>
+        </div>
+        <div id="show">
+            <header>
+                <div class="brand">
+                 <i class="fa-solid fa-building-columns"></i>
+                 <h3>Wyre </h3>
+                </div>
+                 <nav>
+                     <a href="index.html">HOME</a>
+                     <a href="">ABOUT US</a>
+                     <a href="">SUPPORT SERVICE</a>
+                     <a href="">MY ACCOUNT</a>
+                     <a href=""><input type="button" value="DEBIT CARD" id="btn"></a>
+                 </nav>
+                 <div class="menu">
+                     <i class="fa-sharp fa-solid fa-bars"></i>
+                 </div>
+             </header>
+        </div>
     </div>
     
 </body>

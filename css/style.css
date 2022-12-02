@@ -100,7 +100,7 @@ footer .content :hover{
 section #register{
     text-align: center;
 }
-.fillForm{
+#fillForm{
     text-align: center;
     padding-top: 100px;
 }
@@ -111,5 +111,8 @@ section #register{
     padding: 5px;
     margin: 5px;
     font-weight: 700;
+}
+#show{
+    display: none;
 }
 

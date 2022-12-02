@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $("#register").submit(function(event){
+        event.preventDefault();
+        $("#submit").click(function(){
+            $("#fillForm").hide();
+            $("#show").show();
+        });
+    })
+})
