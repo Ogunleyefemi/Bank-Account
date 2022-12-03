@@ -28,67 +28,66 @@
              <div class="menu">
                  <i class="fa-sharp fa-solid fa-bars"></i>
              </div>
-         </header>
-         
-         <!-- section -->
-        <div id="fillForm">
+        </header>
+        <!-- section for form -->
+        <h1 style="padding-top:70px;">OPENING ACCOUNT</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <hr>
             <h6 style="font-weight: 700;">kindly complete the form below to create a WYRE account and also an initial deposit...</h6><br>
-            <form action="" id="register" class="form-control">
-                <div class="row">
-                    <div class="col-6">
-                        <label for="">Surname:</label>
-                        <input type="text"  id="surname" class="form-control" size="70"  required><br>
-                        <label for="">Firstname:</label>
-                        <input type="text"  id="firstname" class="form-control" size="70" required><br>
-                        <label for="">Phone Number:</label>
-                        <input type="number"  id="phoneNumber" class="form-control" size="70" minlength="11" required><br>
-                        <label for="">ID Card:</label>
-                        <input type="file" class="form-control" size="70"><br>
-                    </div>
-                    <div class="col-6">
-                        <label for="">Email:</label>
-                        <input type="email"  id="email" class="form-control" size="70" required ><br>
-                        <label for="">D.O.B:</label>
-                        <input type="date"  id="dob" class="form-control" size="70" required><br>
-                        <label for="">Password:</label>
-                        <input type="password"  id="password" class="form-control" size="70" required><br>
-                        <label for="">Initail Deposit:</label>
-                        <input type="number" id="deposit" class="form-control" size="70" required>
-                    </div>
-                </div>
-                <div class="submitBtn">
-                    <button id="submit">CREATE ACCOUNT</button>
-                </div>
-            </form>
-                   
-            
-        </div>
-        <div id="show">
-            <header>
-                <div class="brand">
-                 <i class="fa-solid fa-building-columns"></i>
-                 <h3>Wyre </h3>
-                </div>
-                 <nav>
-                     <a href="index.html">HOME</a>
-                     <a href="">ABOUT US</a>
-                     <a href="">SUPPORT SERVICE</a>
-                     <a href="">MY ACCOUNT</a>
-                     <a href=""><input type="button" value="DEBIT CARD" id="btn"></a>
-                 </nav>
-                 <div class="menu">
-                     <i class="fa-sharp fa-solid fa-bars"></i>
-                 </div>
-            </header>
-
-             <!-- account dashboard -->
-             <div class="dashboard">
-                <h5>Hi,<span id="accountName"></span></h5><br>
-                <h5>Account Balance: <span id="amountDeposit"></span></h5>
+            <form id="fillForm" >
+              <div class="form-group">
+                <label for="">Surname:</label>
+                <input type="text"  id="surname" class="form-control" size="70"  required><br>
+              </div>
+              <div class="form-group">
+                <label for="">Firstname:</label>
+                <input type="text"  id="firstname" class="form-control" size="70" required><br>
+              </div>
+              <div class="form-group">
+                <label for="">Phone Number:</label>
+            <input type="number"  id="phoneNumber" class="form-control" size="70" minlength="11" required><br>
+              </div>
+              <div class="form-group">
+                <label for="">Initial Deposit:</label>
+            <input type="number" id="initial" class="form-control" size="70" required><br>
+              </div><br>
+              
+              <div class="submitBtn">
+                <button id="submit">CREATE ACCOUNT</button>
              </div>
-             
+            </form>
+            <hr>
+            <h2>Contacts:</h2>
+        <ul id="contacts">
+        </ul>
+          </div>
+          <div class="col-md-6">
+            <div id="show-contact" style="padding-top: 100px; padding-left: 50px;">
+                <h5>Hi, <span id="accountName"></span></h5>
+                <h5>Account Balance: <span id="amountDeposit"></span></h5><br>
+                <form>
+                    <div class="form-group">
+                        <label for="">Deposit:</label>
+                    <input type="number" id="deposit" class="form-control" size="70"><br>
+                      </div><br>
+                      <div class="form-group">
+                        <label for="">Withdraw:</label>
+                    <input type="number" id="withdraw" class="form-control" size="70"><br>
+                      </div><br>
+                      <div class="submitBtn">
+                        <button id="submit">TRANSACT</button>
+                     </div>
+                </form>
+            </div>
+          </div>
         </div>
+       
+
+
+
     </div>
-    
 </body>
 </html>
+
+

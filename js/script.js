@@ -42,7 +42,7 @@ Users.prototype.deposit = function(amount){
     this.balance += amount;
  }
  Users.prototype.withdraw = function(amount){
-    if(this.balance - amount < 0){
+    if(this.balance - amount < 0 || this.balance - amount === 0){
       return 'Insufficient funds'
     }else{
       this.balance -= money
@@ -50,27 +50,45 @@ Users.prototype.deposit = function(amount){
   }
 // UI logic
 let account = new Account();
-// function to display fullname
-function displayFullname(customers){
-    let showFullname = $("#accountName");
+function displayContactDetails(contacts) {
+    let contactsList = $("ul#contacts");
     let htmlForContactInfo = "";
-    Object.keys(customers.Users).forEach(function(key) {
-      const customers = customers.fullName(key);
-      htmlForContactInfo +=  customers.surName + " " + customers.firstName;
+    Object.keys(contacts.details).forEach(function(key) {
+      const contact = contacts.findContact(key);
+      htmlForContactInfo += "<li id=" + contacts.id + ">" + contact.surName + " " + contact.firstName + "</li>";
     });
-    showFullname.html(htmlForContactInfo);
+    contactsList.text(htmlForContactInfo);
+  };
 
-}
+//   event listener
+$("#submit").click(function(){
+    $("#show-contact").show();
+});
+
 
 
 
 
 $(document).ready(function(){
-    $("#register").submit(function(event){
+    $("#fillForm").submit(function(event){
         event.preventDefault();
-        $("#submit").click(function(){
-            $("#fillForm").hide();
-            $("#show").show();
-        });
-    })
-})
+       const userSurName = $("#surname").val();
+       const userFirstName = $("#firstname").val();
+       const userDeposit = $("#initial").val();
+
+        $("#accountName").text(userSurName);
+        $("#amountDeposit").text(userDeposit);
+
+
+    //    clear form
+    $("#surname").val(" ");
+    $("#firstname").val(" ");
+    $("#deposit").val(" ");
+    $("#phoneNumber").val(" ");
+    $("#initial").val(" ");
+   
+    let customer = new Users(userSurName, userFirstName, userDeposit);
+    account.addContact(customer);
+    displayContactDetails(account);
+    });
+});
