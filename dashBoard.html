@@ -51,21 +51,22 @@
               <div class="form-group">
                 <label for="">Initial Deposit:</label>
             <input type="number" id="initial" class="form-control" size="70" required><br>
-              </div><br>
+              </div>
               
               <div class="submitBtn">
-                <button id="submit">CREATE ACCOUNT</button>
+                <button id="submit" type="submit">CREATE ACCOUNT</button>
              </div>
+             <h2>Contacts:</h2>
+             <ul id="contacts">
+             </ul>
             </form>
             <hr>
-            <h2>Contacts:</h2>
-        <ul id="contacts">
-        </ul>
+           
           </div>
           <div class="col-md-6">
             <div id="show-contact" style="padding-top: 100px; padding-left: 50px;">
-                <h5>Hi, <span id="accountName"></span></h5>
-                <h5>Account Balance: <span id="amountDeposit"></span></h5><br>
+                <p> Hi, <span class="accountName"></span></p>
+                <p>Account Balance: <span class="amountDeposit"></span></p><br>
                 <form>
                     <div class="form-group">
                         <label for="">Deposit:</label>

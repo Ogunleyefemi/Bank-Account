@@ -48,36 +48,44 @@ Users.prototype.deposit = function(amount){
       this.balance -= money
     }
   }
-// UI logic
-let account = new Account();
+  let account = new Account();
+  // UI logic
 function displayContactDetails(contacts) {
-    let contactsList = $("ul#contacts");
-    let htmlForContactInfo = "";
+    let contactsList = $("#contacts");
+    let htmlForInfo = "";
     Object.keys(contacts.details).forEach(function(key) {
       const contact = contacts.findContact(key);
-      htmlForContactInfo += "<li id=" + contacts.id + ">" + contact.surName + " " + contact.firstName + "</li>";
-    });
-    contactsList.text(htmlForContactInfo);
-  };
-
-//   event listener
-$("#submit").click(function(){
+      htmlForInfo += "<li id" + contact.id + ">" + contact.surName + " " + contact.firstName + "</li>";
+      });
+     contactsList.html(htmlForInfo);
+     console.log(displayContactDetails);
+}
+//   show dashboard
+function showContact(accountId) {
+    const contact = account.findContact(accountId);
     $("#show-contact").show();
-});
+    $(".accountName").html(contact.surName); 
+    $(".amountDeposit").html(contact.balance);
+}
+//   event listener
 
-
-
+function attachContactListeners() {
+    $("#contacts").on("click", "li", function() {
+      showContact(this.id);
+    });
+};
 
 
 $(document).ready(function(){
+    attachContactListeners();
     $("#fillForm").submit(function(event){
         event.preventDefault();
        const userSurName = $("#surname").val();
        const userFirstName = $("#firstname").val();
        const userDeposit = $("#initial").val();
 
-        $("#accountName").text(userSurName);
-        $("#amountDeposit").text(userDeposit);
+        // $("#accountName").text(userSurName);
+        // $("#amountDeposit").text(userDeposit);
 
 
     //    clear form
