@@ -67,8 +67,8 @@ function showContact(accountId) {
     $(".accountName").html(contact.surName); 
     $(".amountDeposit").html(contact.balance);
 }
-//   event listener
 
+//   event listener
 function attachContactListeners() {
     $("#contacts").on("click", "li", function() {
       showContact(this.id);

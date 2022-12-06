@@ -29,12 +29,11 @@ nav a{
 .menu{
     margin-top: 20px;
     display: inline-flex;
-    margin-left: 300px;
     font-size: large;
     color: white;
     padding: 10px;
     margin: 10px;
-    display: none;
+     display: none; 
 
 }
 nav :hover{
@@ -114,6 +113,27 @@ section #register{
 }
 #show-contact{
     display: none;
+}
+@media screen and (max-width:320px) {
+    html{
+        font-size: 70%;
+    }
+    .menu{
+        display: inline-flex;
+        margin-left: 150px;
+
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+    
 }
 
 
