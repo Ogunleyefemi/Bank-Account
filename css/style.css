@@ -116,11 +116,32 @@ section #register{
 }
 @media screen and (max-width:320px) {
     html{
-        font-size: 70%;
+        font-size: 100%;
     }
     .menu{
         display: inline-flex;
         margin-left: 150px;
+
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    html{
+        font-size: 100%;
+    }
+    .menu{
+        display: inline-flex;
+        margin-left: 200px;
 
     }
     header nav{
